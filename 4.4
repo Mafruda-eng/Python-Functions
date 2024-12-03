@@ -1,0 +1,10 @@
+def count_even_odd(numbers):
+    even_count = sum(1 for num in numbers if num % 2 == 0)
+    odd_count = len(numbers) - even_count
+    if even_count > odd_count:
+        print("More even numbers")
+    elif odd_count > even_count:
+        print("More odd numbers")
+    else:
+        print("Equal even and odd numbers")
+count_even_odd([1, 2, 3, 4, 5, 6])
